@@ -1,0 +1,10 @@
+  <view class="loginBtnView">
+    <button class="loginBtn" type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="login">{{phone}}</button>
+        <label class="explain">如果忘记密码,请联系客服修改</label>
+        <label class="explain marginTop10">客服电话,
+        <text class="call" bindtap="call">028-86051215</text>
+        </label>
+  </view>
+  <view bindtap="viewTap"> click me </view>
+  <view bindtap="customData"> 2222</view>

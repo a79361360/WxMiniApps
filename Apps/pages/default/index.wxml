@@ -1,0 +1,4 @@
+<page>
+<view>{{title}}</view>
+<view>{{msg}}</view>
+</page>
