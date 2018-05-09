@@ -8,3 +8,28 @@
   </view>
   <view bindtap="viewTap"> click me </view>
   <view bindtap="customData"> 2222</view>
+  <view wx:for-items="{{array}}" wx:key="{{array}}"> {{item}} </view>
+  <view wx:if="{{view=='xie'}}"> {{view}} </view>
+  <view wx:elif="{{view == 'qiu'}}"> APP </view>
+  <template name="msgItem">
+  <view>
+    username: <text>{{username}}</text>
+    userpwd: <text>{{userpwd}}</text>
+  </view>
+</template>
+<template is="msgItem" data="{{...item}}"/>
+<template name="odd">
+  <view> odd </view>
+</template>
+<template name="even">
+  <view> even </view>
+</template>
+<block wx:key="{{array}}" wx:for="{{array}}">
+    <template is="{{item % 2 == 0 ? 'even' : 'odd'}}"/>
+</block>
+<checkbox checked="{{false}}">男</checkbox>
+<checkbox checked="{{true}}">女</checkbox>
+<view hidden="{{flag ? true : false}}"> Hidden </view>
+<view wx:for="{{array}}" wx:for-item="i">
+{{i}}
+</view>

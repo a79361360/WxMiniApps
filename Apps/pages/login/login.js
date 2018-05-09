@@ -4,7 +4,14 @@ Page({
   data: {
     phone: '就是看看是不是这个值',
     password: '',
-    array: [{ text: 'init data' }]
+    array: [1, 2, 3, 4, 5],
+    view:'qiu',
+    item:{
+      username:'qiu',
+      userpwd:'123456789',
+      sex:'男'
+    },
+    flag:false
   },
   login: function () {
     if (this.data.phone.length == 0 || this.data.password.length == 0) {
